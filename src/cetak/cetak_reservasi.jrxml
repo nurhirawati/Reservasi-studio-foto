@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a14042a5-bab7-486f-a1a0-c0e82de9eb66">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from reservasi]]>
+	</queryString>
+	<field name="no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="paket" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jam" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="background" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="802" height="79" uuid="799aac79-bc46-4caa-bf03-cc632ef8f318"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Rounded MT Bold" size="40" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HASIL RESERVASI]]></text>
+			</staticText>
+			<image>
+				<reportElement x="130" y="23" width="55" height="40" uuid="45ff6653-458f-4883-9b64-5ec2ad233636"/>
+				<imageExpression><![CDATA["C:\\Users\\USER\\Downloads\\logo studio - Copy.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="9" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="28" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="114" height="20" uuid="4c574903-c9d7-4a4d-bdf1-4c07a9edf558"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bookman Old Style" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="0" width="114" height="20" uuid="f709fe07-8251-4916-aef7-d9af4b8711f7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bookman Old Style" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="228" y="0" width="114" height="20" uuid="6520be3e-e129-4721-acfc-8025bf45ae92"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bookman Old Style" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Paket]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="0" width="114" height="20" uuid="010e182c-50e1-4a66-a1eb-4f79dca1636d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bookman Old Style" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="456" y="0" width="114" height="20" uuid="4a9b2087-624c-45aa-b77a-4e212dcf4583"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bookman Old Style" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tgl]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="570" y="0" width="114" height="20" uuid="82f87d13-3aea-4342-812a-2e6953fcd49f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bookman Old Style" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Background]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="684" y="0" width="114" height="20" uuid="338cfde5-cfd0-4d35-aff0-444141e9bce2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Bookman Old Style" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hp]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="114" height="20" uuid="1cb3d4ca-a560-4ebb-8ee4-e31c5cec5bd9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="0" width="114" height="20" uuid="b9b96d8a-a867-45e5-9385-85c72b9a4bb2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="228" y="0" width="114" height="20" uuid="bc55c628-dd03-49b1-a1a8-56e969a1e8b0"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{paket}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="342" y="0" width="114" height="20" uuid="1880a358-d9e2-498a-8578-45f6b3de6cc9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{jam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="456" y="0" width="114" height="20" uuid="458c28cd-83f9-4181-9106-9d72b7dcdf1a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tgl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="570" y="0" width="114" height="20" uuid="e2e04c1c-933e-4edd-967c-b8d0f3709ad2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{background}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="684" y="0" width="114" height="20" uuid="76c43615-7514-4bef-93e2-fff582209d08"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{hp}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="17" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="798" height="1" uuid="6a332c8f-c2b2-4723-91ce-928507ebbede"/>
+			</line>
+			<textField>
+				<reportElement x="0" y="34" width="100" height="20" uuid="f4acc7f4-ab65-4aa2-97ee-0a83a78285e1"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="701" y="1" width="100" height="20" uuid="b3b675a5-f94e-4a72-a669-bd915f1072e1"/>
+				<text><![CDATA[Tanggal Cetak]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="701" y="34" width="100" height="20" uuid="826bca15-cd5f-420f-9aa9-fa2a160fae1c"/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(new Date())]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
